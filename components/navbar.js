@@ -1,4 +1,4 @@
-import { Box, extendTheme, Button, ButtonGroup, Center, Heading, ChakraProvider } from '@chakra-ui/react'
+import { Box, extendTheme, Button, ButtonGroup, Center, Heading, ChakraProvider, Text } from '@chakra-ui/react'
 import { Link } from 'gatsby'
 import "@fontsource/overpass"
 import "@fontsource/lato"
@@ -27,9 +27,17 @@ export default function Header() {
         <>
             <Center>
                 <ChakraProvider theme={myTheme}>
-                <Heading textAlign={"center"} fontSize={35}
-                mt={25}>FBR Studio</Heading>
+                <Heading textAlign={"center"} fontSize={45}
+                mt={25}>FBR Studios</Heading>
+
+
+
+
                 </ChakraProvider>
+            </Center>
+
+            <Center>
+            <Text  textAlign={"center"} fontSize={20}>The Search Engine Specialist</Text>
             </Center>
 
             <Center>
@@ -37,16 +45,17 @@ export default function Header() {
             <Button m={5} width={200} bg={colours.lightblue} color={colours.white}>Home</Button>
             </Link>
 
-            <Link href="/account/addBooking" passHref>
-            <Button m={5} width={200} bg={colours.lightblue} color={colours.white}>Instant Emotions</Button>
-            </Link>
 
-            <Link href="/account/viewBooking" passHref>
-            <Button m={5} width={200} bg={colours.lightblue} color={colours.white}>Web Development</Button>
-            </Link>
-
-            <Link href="/account/overview" passHref>
+            <Link href="/webDevelopment" passHref>
             <Button m={5} width={200} bg={colours.lightblue} color={colours.white}>SEO</Button>
+            </Link>
+
+            <Link href="/webDevelopment" passHref>
+            <Button m={5} width={200} bg={colours.lightblue} color={colours.white}>Services</Button>
+            </Link>
+
+            <Link href="/seo" passHref>
+            <Button m={5} width={200} bg={colours.lightblue} color={colours.white}>Blog</Button>
             </Link>
 
             </Center>

@@ -16,7 +16,8 @@ const myTheme = extendTheme({
 export default function Pages() {
     return(
         <>
-        <Box bg='#f5f5f5'/>
+        {/* <Box bg='#f5f5f5'/> */}
+        <Box bg='#DCE2EF'/>
         </>
     )
 }
