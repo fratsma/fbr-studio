@@ -46,11 +46,7 @@ export default function Header() {
             </Link>
 
 
-            <Link href="/webDevelopment" passHref>
-            <Button m={5} width={200} bg={colours.lightblue} color={colours.white}>SEO</Button>
-            </Link>
-
-            <Link href="/webDevelopment" passHref>
+            <Link href="/services" passHref>
             <Button m={5} width={200} bg={colours.lightblue} color={colours.white}>Services</Button>
             </Link>
 

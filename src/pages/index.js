@@ -7,6 +7,7 @@ import Pages from "../../components/pages"
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 import MyCard from "../../components/card"
 import PurposeCard from "../../components/purposeCard"
+import BestSellingServices from "../../components/bestSellingServices"
 
 const myTheme = extendTheme({
   fonts: {
@@ -37,7 +38,9 @@ const IndexPage = () => {
         <PurposeCard/>
 
 
-        <Text align={"center"} fontSize={25} fontWeight={"bold"} pt={35}> Services </Text>
+        <Text align={"center"} fontSize={25} fontWeight={"bold"} pt={35}> Featured Products </Text>
+
+        <BestSellingServices/>
 
     </ChakraProvider>
 
