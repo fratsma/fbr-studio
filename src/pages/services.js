@@ -9,6 +9,8 @@ import MyCard from "../../components/card"
 import PurposeCard from "../../components/purposeCard"
 import BestSellingServices from "../../components/bestSellingServices"
 import Products from "../../components/products"
+import FAQ from "../../components/accordian"
+import SmallWithSocial from "../../components/footer"
 
 const myTheme = extendTheme({
   fonts: {
@@ -106,6 +108,34 @@ const Services = () => {
 
           
         </Center>
+
+        <Text align={"center"} fontSize={25} fontWeight={"bold"}> Frequently Asked Questions  </Text>
+
+        <Center>
+
+        <FAQ
+        
+        item1Title="How will I recieve my audit?"
+        item1Content="The audit will be sent in a PDF document via the email that you provide in checkout."
+        
+        item2Title="I don't understand a part of my audit, what should I do?"
+        item2Content="Fear not! Whilst we try and make our audit as simple to understand as possible, we recognise that some parts may be confusing.
+        Please contact us via email and we will be happy to explain any part of the audit that you don't understand."
+
+        item3Title="How do I request the follow up audit?"
+        item3Content="Once you have recieved your first audit, you will be able to request the follow up audit via email. Whilst we recommend around 2 months wait between audits,
+        you can request it anytime from 1 week - 6 months after the first audit. The second audit will arrive between 1-3 days after we receive your request." 
+
+        item4Title="How does the fully managed SEO work?"
+        item4Content="Once you have purchased the fully managed SEO, we will contact you via email to discuss your website. 
+        We will take a dive into your SEO and analyse what can be improved. 
+        Once we have done this, we can start optimising your website. For example, we will 
+        slightly alter content on your site to improve keyword optimisation and optimise image's to improve site speed."
+        />
+
+        </Center>
+
+        <SmallWithSocial/>
 
 
     </ChakraProvider>

@@ -11,6 +11,7 @@ import * as React from "react"
 import colours from '../config/colours'
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 import { MdCheckCircle, CheckIcon} from '@chakra-ui/icons'
+import FAQ from './accordian'
 
 
 const myTheme = extendTheme({
@@ -104,6 +105,8 @@ export default function Products(props) {
                 </ButtonGroup>
             </CardFooter>
             </Card>
+
+            
 
 
         </>
