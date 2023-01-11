@@ -84,10 +84,10 @@ export default function Products(props) {
                     {props.secondDescription}
                 </Text>
    
-                <Text color='blue.600' fontSize='2xl' >
+                <Text color={colours.lightblue} fontSize='2xl' >
                     {props.price}
                 </Text>
-                <Text color='blue.600' fontSize='sm'>
+                <Text color={colours.lightblue} fontSize='sm'>
                     {props.deliveryTime}
                 </Text>
                 </Stack>
@@ -95,7 +95,7 @@ export default function Products(props) {
             <Divider />
             <CardFooter>
                 <ButtonGroup spacing='2'>
-                <Button variant='solid' colorScheme='blue'>
+                <Button variant='solid' bg={colours.lightblue} color={colours.white}>
                     Buy now
                 </Button>
                 <Button variant='ghost' colorScheme='blue'>
