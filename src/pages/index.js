@@ -9,6 +9,8 @@ import MyCard from "../../components/card"
 import PurposeCard from "../../components/purposeCard"
 import BestSellingServices from "../../components/bestSellingServices"
 import SmallWithSocial from "../../components/footer"
+import Hero from "../../components/hero"
+import { DarkModeSwitch } from "../../components/navbar2"
 
 const myTheme = extendTheme({
   fonts: {
@@ -24,9 +26,15 @@ const IndexPage = () => {
   return (
     <ChakraProvider>
 
-        <Header/>
+        <DarkModeSwitch/>
 
-        <Text align={"center"} fontSize={25} fontWeight={"bold"}> Home Page  </Text>
+        {/* <Center>
+        <Heading fontSize={'3xl'}>Home Page
+        </Heading>
+        </Center>   */}
+
+        <Hero/>
+
 
         <Center>
           <MyCard/>

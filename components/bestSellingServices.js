@@ -33,13 +33,14 @@ export default function BestSellingServices() {
             overflow='hidden'
             variant='outline'
             bg={colours.white}
-            width={"50%"}
+            // width={"50%"}
+            maxW={{ base: '90%'}}
             >
             <Image
                 objectFit='cover'
                 maxW={{ base: '100%', sm: '200px' }}
-                src='https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60'
-                alt='Caffe Latte'
+                src='https://images.unsplash.com/photo-1600783245777-080fd7ff9253?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80'
+                alt='SEO for Small Business'
             />
 
             <Stack>

@@ -33,7 +33,7 @@ export default function MyCard() {
             <WrapItem>
 
             
-            <Card bg={colours.white} maxWidth={450} height={250}>
+            <Card bg={colours.white} maxWidth={450} height={250} shadow="xl">
                 <CardHeader >
                 <Heading size='md'>Search Engine Optimisation</Heading>
                 </CardHeader>
@@ -41,25 +41,30 @@ export default function MyCard() {
                 <Text>See how your business' website can improve their SEO and learn how to boost your ranking.</Text>
                 </CardBody>
                 <CardFooter>
-                <Button bg={colours.lightblue} color={colours.white}>View here</Button>
+                <Link href="/services" passHref>
+                <Button bg={colours.lightblue} color={colours.white}>View More</Button>
+                </Link>
                 </CardFooter>
             </Card>
             </WrapItem>
             <WrapItem >
-            <Card bg={colours.white} maxWidth={450} height={250}>
+            <Card bg={colours.white} maxWidth={450} height={250} shadow="xl">
                 <CardHeader>
-                <Heading size='md'>Service Information</Heading>
+                <Heading size='md'>Website Development</Heading>
                 </CardHeader>
                 <CardBody>
                 <Text>Find out what services we provide to help you improve your SEO.</Text>
                 </CardBody>
                 <CardFooter>
-                <Button bg={colours.lightblue} color={colours.white}>View here</Button>
+                <Link href="/webDev" passHref>
+                <Button bg={colours.lightblue} color={colours.white}>View More</Button>
+                </Link>
+                
                 </CardFooter>
             </Card>
             </WrapItem>
             <WrapItem>
-            <Card bg={colours.white} maxWidth={450} height={250}>
+            <Card bg={colours.white} maxWidth={450} height={250} shadow="xl">
                 <CardHeader>
                 <Heading size='md'>SEO Blog</Heading>
                 </CardHeader>
@@ -67,7 +72,9 @@ export default function MyCard() {
                 <Text>Find out how to get your business to show up on Google! View blog posts and learn more about SEO without all the jargon.</Text>
                 </CardBody>
                 <CardFooter>
-                <Button bg={colours.lightblue} color={colours.white}>View here</Button>
+                <Link href="/blog" passHref>
+                <Button bg={colours.lightblue} color={colours.white}>View More</Button>
+                </Link>
                 </CardFooter>
             </Card>
             </WrapItem>

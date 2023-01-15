@@ -4,6 +4,7 @@ import "@fontsource/overpass"
 import "@fontsource/lato"
 import Header from "../../components/navbar"
 import Pages from "../../components/pages"
+import { DarkModeSwitch } from "../../components/navbar2"
 
 const myTheme = extendTheme({
   fonts: {
@@ -19,9 +20,9 @@ const SEO = () => {
   return (
     <ChakraProvider>
 
-        <Header/>
 
-        <Text>SEO</Text>        
+        <DarkModeSwitch/>
+
 
 
     </ChakraProvider>

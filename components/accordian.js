@@ -24,7 +24,7 @@ import {
     return(
             
 
-            <Accordion allowToggle width={"50%"} mt={10}>
+            <Accordion allowToggle minW={"50%"} mt={10}>
             <AccordionItem>
                 <h2>
                 <AccordionButton>

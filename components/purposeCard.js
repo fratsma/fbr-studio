@@ -11,7 +11,7 @@ export default function PurposeCard() {
     return(
         <>
         <Center>
-        <Card width={'50%'} mt={10} bg={colours.white}>
+        <Card maxW={{ base: '90%'}} mt={10} bg={colours.white}>
         <CardHeader>
         <Heading size='md'>Helping small businesses reach their online audience</Heading>
         </CardHeader>

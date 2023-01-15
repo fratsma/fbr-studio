@@ -33,7 +33,7 @@ export default function Products(props) {
     return(
         <>
             
-            <Card maxW='sm' bg={colours.white} margin={10} height={720}>
+            <Card shadow="xl" maxW='sm' bg={colours.white} margin={10} height={750}>
             <CardBody>
                 <Stack mt='6' spacing='3'>
                 <Heading size='md'>{props.title}</Heading>
@@ -96,12 +96,13 @@ export default function Products(props) {
             <Divider />
             <CardFooter>
                 <ButtonGroup spacing='2'>
-                <Button variant='solid' bg={colours.lightblue} color={colours.white}>
+                <Button variant='solid' bg={colours.lightblue} color={colours.white}    
+                _hover={{
+                bg: 'green.500',
+            }}>
                     Buy now
                 </Button>
-                <Button variant='ghost' colorScheme='blue'>
-                    Add to cart
-                </Button>
+
                 </ButtonGroup>
             </CardFooter>
             </Card>

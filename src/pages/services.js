@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Text, extendTheme, ChakraProvider, Heading, Center, Button, SimpleGrid, Divider, Box, Stack, StackDivider, Wrap, WrapItem } from "@chakra-ui/react"
+import { Text, extendTheme, ChakraProvider, Heading, Center, Button, SimpleGrid, Divider, Box, Stack, StackDivider, Wrap, WrapItem, Flex } from "@chakra-ui/react"
 import "@fontsource/overpass"
 import "@fontsource/lato"
 import Header from "../../components/navbar"
@@ -11,6 +11,10 @@ import BestSellingServices from "../../components/bestSellingServices"
 import Products from "../../components/products"
 import FAQ from "../../components/accordian"
 import SmallWithSocial from "../../components/footer"
+import { DarkModeSwitch } from "../../components/navbar2"
+
+
+
 
 const myTheme = extendTheme({
   fonts: {
@@ -26,11 +30,20 @@ const Services = () => {
   return (
     <ChakraProvider>
 
-        <Header/>
+        <DarkModeSwitch/>
 
-        <Text align={"center"} fontSize={25} fontWeight={"bold"}> Services  </Text>
+        {/* <Text align={"center"} fontSize={25} fontWeight={"bold"}> Services  </Text> */}
+        <Center>
 
-          <Center>
+        <Heading fontSize={'3xl'} textAlign={"center"}>What SEO Services Do We Offer?
+        </Heading>
+        </Center>
+
+        <Wrap spacing="20px" justify="center" margin={0}>
+        <WrapItem>
+
+
+          {/* <Center> */}
           <Products title="Full SEO Audit" 
           description="The best way to improve your small business' online presence. We provide an in depth analysis of your website and guide you on how to improve your SEO." 
           subTitle="What you get:"
@@ -51,7 +64,9 @@ const Services = () => {
           price="£30"
           deliveryTime="Delivery Time: 1-3 Days"
           />
+          </WrapItem>
 
+          <WrapItem>
 
           <Products title="Full SEO Audit with Follow Up"
           description="We will provide 2 full SEO Audits. The second audit will take place 1-3 months after the first one. 
@@ -78,7 +93,8 @@ const Services = () => {
           deliveryTime="Delivery Time: 1-3 Days"
 
           />
-
+          </WrapItem>
+          <WrapItem>
           <Products title="Fully Managed SEO"
           description="Not only will you get a full SEO Audit, but we will make all the changes for you. 
           The best option for business' that don't have the time to manage their SEO themselves."
@@ -104,10 +120,12 @@ const Services = () => {
           deliveryTime="Delivery Time: 1-2 Weeks"
                 
           />
-
+          </WrapItem>
 
           
-        </Center>
+        {/* </Center> */}
+
+        </Wrap>
 
         <Text align={"center"} fontSize={25} fontWeight={"bold"}> Frequently Asked Questions  </Text>
 
@@ -133,7 +151,17 @@ const Services = () => {
         slightly alter content on your site to improve keyword optimisation and optimise image's to improve site speed."
         />
 
+        
+
         </Center>
+
+        <Text align={"center"} fontSize={25} fontWeight={"bold"} mt={10} mb={5}>Got Questions? Ask them here! </Text>
+
+        <iframe src="https://www.cognitoforms.com/f/w7oGKl5blkyNwDqf9gtIig/1" width={"100%"} height="270"></iframe>
+        <script src="https://www.cognitoforms.com/f/iframe.js"></script>
+
+
+
 
         <SmallWithSocial/>
 
