@@ -25,10 +25,10 @@
     "@fontsource/open-sans": "^4.5.13",
     "@fontsource/overpass": "^4.5.10",
     "@fontsource/questrial": "^4.5.10",
-
     "framer-motion": "^7.10.3",
-    "gatsby": "^4.24.5",
+    "gatsby": "^5.4.1",
     "gatsby-plugin-manifest": "^5.4.0",
+    "gatsby-source-stripe": "^4.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-node": "^1.0.2"

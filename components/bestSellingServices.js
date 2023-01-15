@@ -58,13 +58,17 @@ export default function BestSellingServices() {
                 </CardBody>
 
                 <CardFooter>
+                <Link href={'/services'}>
                 <Button variant='solid' bg={colours.lightblue} color={colours.white}>
                     View More
                 </Button>
+                </Link>
 
+                <Link href={'https://buy.stripe.com/fZe4jW5ZK9gq93yeUU'}>
                 <Button variant='solid' bg={colours.lightblue} color={colours.white} marginLeft={5}>
-                    Add to Cart
+                    Buy Now
                 </Button>
+                </Link>
                 </CardFooter>
             </Stack>
             </Card>

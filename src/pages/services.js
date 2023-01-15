@@ -15,7 +15,6 @@ import { DarkModeSwitch } from "../../components/navbar2"
 
 
 
-
 const myTheme = extendTheme({
   fonts: {
     heading: "lato",
@@ -57,6 +56,9 @@ const Services = () => {
           listItem9="Up to 5 Pages Analysed"
           listItem8="Local SEO Analysis"
 
+          link="https://buy.stripe.com/fZe4jW5ZK9gq93yeUU"
+
+
           secondDescription="The audit will be sent in jargon free document that will thouroughly explain 
           what needs to be done to improve your SEO. "
 
@@ -74,7 +76,6 @@ const Services = () => {
 
           subTitle="What you get:"
 
-
           listItem1="Full SEO Audit x2"
           listItem2="Detailed Comparison"
           listItem3="Opportunities for Improvement"
@@ -91,6 +92,8 @@ const Services = () => {
 
           price="£50"
           deliveryTime="Delivery Time: 1-3 Days"
+          link="https://buy.stripe.com/aEUg2Edsc2S24Ni8wy"
+
 
           />
           </WrapItem>
@@ -118,6 +121,9 @@ const Services = () => {
 
           price="£100"
           deliveryTime="Delivery Time: 1-2 Weeks"
+
+          link="https://buy.stripe.com/bIY3fSfAkgIS2Fa8wx"
+
                 
           />
           </WrapItem>
@@ -149,6 +155,7 @@ const Services = () => {
         We will take a dive into your SEO and analyse what can be improved. 
         Once we have done this, we can start optimising your website. For example, we will 
         slightly alter content on your site to improve keyword optimisation and optimise image's to improve site speed."
+
         />
 
         

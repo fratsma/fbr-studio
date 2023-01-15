@@ -10,20 +10,17 @@ import {
   ListIcon,
   Button,
   useColorModeValue,
+  Link,
 } from '@chakra-ui/react';
 import { CheckIcon } from '@chakra-ui/icons';
 import colours from "../config/colours";
 
 export default function Pricing() {
   return (
-    <Center py={6}>
+    <Center py={6} marginTop={5}> 
       <Box
         maxW={'330px'}
-        w={'full'}
-        bg={useColorModeValue('white', 'gray.800')}
-        boxShadow={'lg'}
-        rounded={'md'}
-        overflow={'hidden'}>
+        bg={colours.white}  padding={4} borderRadius={10} shadow="xl">
         <Stack
           textAlign={'center'}
           p={6}
@@ -46,6 +43,7 @@ export default function Pricing() {
           </Stack>
         </Stack>
 
+            <Link href="https://buy.stripe.com/eVaeYA5ZKboy4NieUZ">
           <Center>
           <Button
             mb={5}
@@ -60,7 +58,9 @@ export default function Pricing() {
 >
                         Buy Now
                     </Button>
+                    
                 </Center>  
+                    </Link>
         </Box>
       
     </Center>

@@ -96,12 +96,15 @@ export default function Products(props) {
             <Divider />
             <CardFooter>
                 <ButtonGroup spacing='2'>
+                <Link href={props.link} >
+
                 <Button variant='solid' bg={colours.lightblue} color={colours.white}    
                 _hover={{
                 bg: 'green.500',
             }}>
                     Buy now
                 </Button>
+                </Link>
 
                 </ButtonGroup>
             </CardFooter>

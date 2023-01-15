@@ -48,81 +48,81 @@ const WebDev2 = () => {
       <Container maxW={'6xl'} mt={10}>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10}>
           
-            <HStack align={'top'}>
-              <Box color={'green.400'} px={2}>
+            <HStack align={'top'} bg={colours.white} maxW={'7xl'} padding={4} borderRadius={10} shadow="xl">
+            <Box color={'green.400'} px={2} position={'absolute'}>
                 <Icon as={CheckIcon} />
               </Box>
-              <VStack align={'start'}>
+              <VStack textAlign={'center'}>
                 <Text fontWeight={600}>Driven by SEO</Text>
                 <Text color={'gray.600'}>We make your business show up on search engines. Increasing your visibility and driving more traffic to your website.</Text>
               </VStack>
             </HStack>
 
-            <HStack align={'top'}>
-              <Box color={'green.400'} px={2}>
+            <HStack align={'top'} bg={colours.white} maxW={'7xl'} padding={4} borderRadius={10} shadow="xl">
+            <Box color={'green.400'} px={2} position={'absolute'}>
                 <Icon as={CheckIcon} />
               </Box>
-              <VStack align={'start'}>
+              <VStack textAlign={'center'}>
                 <Text fontWeight={600}>Built for Speed</Text>
                 <Text color={'gray.600'}>We make sure your website loads fast. We use the latest technologies to make sure your website is fast and secure.</Text>
               </VStack>
             </HStack>
 
-            <HStack align={'top'}>
-              <Box color={'green.400'} px={2}>
+            <HStack align={'top'} bg={colours.white} maxW={'7xl'} padding={4} borderRadius={10} shadow="xl">
+            <Box color={'green.400'} px={2} position={'absolute'}>
                 <Icon as={CheckIcon} />
               </Box>
-              <VStack align={'start'}>
+              <VStack textAlign={'center'}>
                 <Text fontWeight={600}>Built for Mobile</Text>
                 <Text color={'gray.600'}>We make sure your website looks amazing on all devices. Allowing your customers to access your website from anywhere.</Text>
               </VStack>
             </HStack>
 
-            <HStack align={'top'}>
-              <Box color={'green.400'} px={2}>
+            <HStack align={'top'}  bg={colours.white} maxW={'7xl'} padding={4} borderRadius={10} shadow="xl">
+            <Box color={'green.400'} px={2} position={'absolute'}>
                 <Icon as={CheckIcon} />
               </Box>
-              <VStack align={'start'}>
+              <VStack textAlign={'center'}>
                 <Text fontWeight={600}>Integrated Analytics</Text>
                 <Text color={'gray.600'}>We integrate Google Analytics to make sure you can track your website's performance and make decisions based on data. </Text>
               </VStack>
             </HStack>
 
-            <HStack align={'top'}>
-              <Box color={'green.400'} px={2}>
+            <HStack align={'top'} bg={colours.white} maxW={'7xl'} padding={4} borderRadius={10} shadow="xl">
+            <Box color={'green.400'} px={2} position={'absolute'}>
                 <Icon as={CheckIcon} />
               </Box>
-              <VStack align={'start'}>
+              <VStack textAlign={'center'}>
                 <Text fontWeight={600}>Affordable</Text>
                 <Text color={'gray.600'}>The average price of a website is around £2,000. At FBR Studios we charge just £300 upfront and then £30 a month.   </Text>
               </VStack>
             </HStack>
 
-            <HStack align={'top'}>
-              <Box color={'green.400'} px={2}>
+            <HStack align={'top'} bg={colours.white} maxW={'7xl'} padding={4} borderRadius={10} shadow="xl">
+              <Box color={'green.400'} px={2} position={'absolute'}>
                 <Icon as={CheckIcon} />
               </Box>
-              <VStack align={'start'}>
+              <VStack textAlign={'center'}>
                 <Text fontWeight={600}>Fully Managed</Text>
                 <Text color={'gray.600'}>You get a 5 page website, hosting, SSL Certificate, Google Analytics and so much more. You won't have to worry about anything.   </Text>
               </VStack>
             </HStack>
 
-            <HStack align={'top'}>
-              <Box color={'green.400'} px={2}>
+            <HStack align={'top'} bg={colours.white} maxW={'7xl'} padding={4} borderRadius={10} shadow="xl">
+            <Box color={'green.400'} px={2} position={'absolute'}>
                 <Icon as={CheckIcon} />
               </Box>
-              <VStack align={'start'}>
+              <VStack textAlign={'center'}>
                 <Text fontWeight={600}>Built for You</Text>
-                <Text color={'gray.600'}>You will get a website that is inspired by designs that you think fits in with your business. </Text>
+                <Text color={'gray.600'}>You will get a front end website that is inspired by designs that you think fits in with your business. </Text>
               </VStack>
             </HStack>
 
-            <HStack align={'top'}>
-              <Box color={'green.400'} px={2}>
+            <HStack align={'top'}bg={colours.white} maxW={'7xl'} padding={4} borderRadius={10} shadow="xl">
+            <Box color={'green.400'} px={2} position={'absolute'}>
                 <Icon as={CheckIcon} />
               </Box>
-              <VStack align={'start'}>
+              <VStack textAlign={'center'}>
                 <Text fontWeight={600}>Aftercare</Text>
                 <Text color={'gray.600'}>You will recieve continued support from us. Just in case anything goes wrong or you want to make any changes.</Text>
               </VStack>
