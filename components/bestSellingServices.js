@@ -23,8 +23,9 @@ export default function BestSellingServices() {
             >
             <Image
                 objectFit='cover'
+
                 maxW={{ base: '100%', sm: '200px' }}
-                src='https://images.unsplash.com/photo-1600783245777-080fd7ff9253?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80'
+                src='google icon phone.jpg'
                 alt='SEO for Small Business'
             />
 

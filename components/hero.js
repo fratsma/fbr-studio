@@ -108,7 +108,7 @@ import colours from '../config/colours';
                 align={'center'}
                 w={'100%'}
                 h={'100%'}
-                src='/icon.png'
+                src='/icon JPEG.jpg'
                 
               />
             </Box>
