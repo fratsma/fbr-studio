@@ -1,49 +1,34 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import { Box, ChakraProvider, Heading, Text } from '@chakra-ui/react';
+import * as React from 'react';
+import { DarkModeSwitch } from "../../components/navbar2";
+import colours from '../../config/colours';
 
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-
-const NotFoundPage = () => {
+export default function NotFound() {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
+
+    <ChakraProvider>
+
+      <DarkModeSwitch/>
+
+    <Box textAlign="center" py={10} px={6}>
+      <Heading
+        display="inline-block"
+        as="h2"
+        size="4xl"
+        color={colours.lightblue}
+        >
+        404
+      </Heading>
+      <Text fontSize="18px" mt={3} mb={2}>
+        Page Not Found
+      </Text>
+      <Text color={'gray.500'} mb={6}>
+        The page you're looking for does not seem to exist
+      </Text>
+
+
+    </Box>
+          </ChakraProvider>
+  );
 }
-
-export default NotFoundPage
-
-export const Head = () => <title>Not found</title>

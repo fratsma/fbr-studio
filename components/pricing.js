@@ -1,18 +1,8 @@
-import * as React from "react"
+import * as React from "react";
 
 import {
-  Box,
-  Center,
-  Text,
-  Stack,
-  List,
-  ListItem,
-  ListIcon,
-  Button,
-  useColorModeValue,
-  Link,
+  Box, Button, Center, Link, Stack, Text, useColorModeValue
 } from '@chakra-ui/react';
-import { CheckIcon } from '@chakra-ui/icons';
 import colours from "../config/colours";
 
 export default function Pricing() {

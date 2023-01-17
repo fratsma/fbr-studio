@@ -1,11 +1,10 @@
-import { Box, extendTheme, Button, ButtonGroup, Center, Heading, ChakraProvider, Text, SimpleGrid, Wrap, WrapItem, Stack, Image } from '@chakra-ui/react'
-import { Link } from 'gatsby'
-import "@fontsource/overpass"
+import { Button, Card, CardBody, CardFooter, Center, extendTheme, Heading, Image, Stack, Text } from '@chakra-ui/react'
 import "@fontsource/lato"
+import "@fontsource/overpass"
 import "@fontsource/questrial"
+import { Link } from 'gatsby'
 import * as React from "react"
 import colours from '../config/colours'
-import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 
 
 const myTheme = extendTheme({

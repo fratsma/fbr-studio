@@ -1,17 +1,11 @@
-import { Box, extendTheme, Button, ButtonGroup, Center, Heading, ChakraProvider, Text, SimpleGrid, Wrap, WrapItem , Stack, Divider,   List,
-    ListItem,
-    ListIcon,
-    OrderedList,
-    UnorderedList,} from '@chakra-ui/react'
-import { Link } from 'gatsby'
-import "@fontsource/overpass"
+import { CheckIcon } from '@chakra-ui/icons'
+import { Button, ButtonGroup, Card, CardBody, CardFooter, Divider, extendTheme, Heading, List, ListIcon, ListItem, Stack, Text } from '@chakra-ui/react'
 import "@fontsource/lato"
+import "@fontsource/overpass"
 import "@fontsource/questrial"
+import { Link } from 'gatsby'
 import * as React from "react"
 import colours from '../config/colours'
-import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
-import { MdCheckCircle, CheckIcon} from '@chakra-ui/icons'
-import FAQ from './accordian'
 
 
 const myTheme = extendTheme({

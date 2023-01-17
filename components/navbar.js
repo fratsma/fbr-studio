@@ -1,13 +1,10 @@
-import { Box, extendTheme, Button, ButtonGroup, Center, Heading, ChakraProvider, Text, Flex, Switch, IconButton } from '@chakra-ui/react'
-import { Image } from "@chakra-ui/image"
-import { Link } from 'gatsby'
-import "@fontsource/overpass"
+import { Button, Center, ChakraProvider, extendTheme, Heading, Text } from '@chakra-ui/react'
 import "@fontsource/lato"
+import "@fontsource/overpass"
 import "@fontsource/questrial"
+import { Link } from 'gatsby'
 import * as React from "react"
 import colours from '../config/colours'
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
-import { useState } from 'react'
 
 const myTheme = extendTheme({
     fonts: {

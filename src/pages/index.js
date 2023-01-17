@@ -1,16 +1,15 @@
-import * as React from "react"
-import { Text, extendTheme, ChakraProvider, Heading, Center, Button, SimpleGrid, Divider, Box, Stack, StackDivider } from "@chakra-ui/react"
-import "@fontsource/overpass"
+import { Center, ChakraProvider, extendTheme, Text } from "@chakra-ui/react"
 import "@fontsource/lato"
-import Header from "../../components/navbar"
-import Pages from "../../components/pages"
-import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
-import MyCard from "../../components/card"
-import PurposeCard from "../../components/purposeCard"
+import "@fontsource/overpass"
+import * as React from "react"
+import { Helmet, HelmetProvider } from 'react-helmet-async'
 import BestSellingServices from "../../components/bestSellingServices"
+import MyCard from "../../components/card"
 import SmallWithSocial from "../../components/footer"
 import Hero from "../../components/hero"
 import { DarkModeSwitch } from "../../components/navbar2"
+import PurposeCard from "../../components/purposeCard"
+
 
 const myTheme = extendTheme({
   fonts: {
@@ -24,14 +23,24 @@ const myTheme = extendTheme({
 
 const IndexPage = () => {
   return (
+    
+
     <ChakraProvider>
+      <HelmetProvider>
+        <Helmet>
+          <title>Home: FBR Studios</title>
+          <meta name="description" content="Helping small businesses with their SEO. We make affordable and simple solutions allowing your business to rank on Google" />
+        </Helmet>
+{/* 
+      <title>FBR Studios: Home</title>
+    <meta>name="Helping small businesses with their SEO. We make affordable and simple solutions allowing your business to rank on Google'</meta> */}
 
         <DarkModeSwitch/>
 
         {/* <Center>
         <Heading fontSize={'3xl'}>Home Page
         </Heading>
-        </Center>   */}
+      </Center>   */}
 
         <Hero/>
 
@@ -53,6 +62,7 @@ const IndexPage = () => {
 
         <SmallWithSocial/>
 
+      </HelmetProvider>
     </ChakraProvider>
 
     

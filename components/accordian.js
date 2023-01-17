@@ -1,16 +1,7 @@
-import { Box, extendTheme, Button, ButtonGroup, Center, Heading, ChakraProvider, Text, SimpleGrid, Wrap, WrapItem , Stack, Divider,   List,
-    ListItem,
-    ListIcon,
-    OrderedList,
-    UnorderedList,} from '@chakra-ui/react'
-import { Link } from 'gatsby'
+import { Box} from '@chakra-ui/react'
 import "@fontsource/overpass"
 import "@fontsource/lato"
-import "@fontsource/questrial"
 import * as React from "react"
-import colours from '../config/colours'
-import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
-import { MdCheckCircle, CheckIcon} from '@chakra-ui/icons'
 
 import {
     Accordion,
@@ -24,7 +15,7 @@ import {
     return(
             
 
-            <Accordion allowToggle minW={"50%"} mt={10}>
+            <Accordion allowToggle width={'50%'} mt={10}>
             <AccordionItem>
                 <h2>
                 <AccordionButton>

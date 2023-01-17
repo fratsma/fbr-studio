@@ -1,14 +1,13 @@
-import * as React from "react"
-import { Text, extendTheme, ChakraProvider, Heading, Center, Box, Container, Grid, GridItem, VStack, SimpleGrid, Stack, HStack, Icon } from "@chakra-ui/react"
-import "@fontsource/overpass"
+import { CheckIcon } from '@chakra-ui/icons'
+import { Box, ChakraProvider, Container, extendTheme, Heading, HStack, Icon, SimpleGrid, Stack, Text, VStack } from "@chakra-ui/react"
 import "@fontsource/lato"
-import Header from "../../components/navbar"
-import Pages from "../../components/pages"
-import { CheckIcon } from '@chakra-ui/icons';
+import "@fontsource/overpass"
+import * as React from "react"
+import { Helmet, HelmetProvider } from 'react-helmet-async'
 import SmallWithSocial from "../../components/footer"
-import colours from "../../config/colours"
-import Pricing from "../../components/pricing"
 import { DarkModeSwitch } from "../../components/navbar2"
+import Pricing from "../../components/pricing"
+import colours from "../../config/colours"
 
 
 const myTheme = extendTheme({
@@ -19,24 +18,21 @@ const myTheme = extendTheme({
 
 })
 
-const features = Array.apply(null, Array(8)).map(function (x, i) {
-    return {
-      id: i,
-      title: 'Lorem ipsum dolor sit amet',
-      text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.',
-      id: i,
-    };
-  });
 
 const WebDev2 = () => {
   return (
     <ChakraProvider>
+      <HelmetProvider>
 
+      <Helmet>
+      <title>Website Development: FBR Studios</title>
+      <meta name="description" content="Affordable and custom website design and development to allow your small business to reach your online potential."/>
+      </Helmet>
         <DarkModeSwitch/>
 
         <Box p={0}>
       <Stack spacing={4} as={Container} maxW={'5xl'} textAlign={'center'}>
-        <Heading fontSize={'3xl'}>Affordable Web Development For Small Businesses
+        <Heading fontSize={'3xl'} as="h1">Affordable Web Development For Small Businesses
         </Heading>
         <Text color={'gray.600'} fontSize={'xl'}>
         We work closely with you to make a website that is perfect for you and your business.
@@ -146,6 +142,7 @@ const WebDev2 = () => {
 
 <SmallWithSocial/>
 
+      </HelmetProvider>
     </ChakraProvider>
   )
 }

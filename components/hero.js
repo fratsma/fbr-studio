@@ -1,20 +1,7 @@
 import {
-    Container,
-    Stack,
-    Flex,
-    Box,
-    Heading,
-    Text,
-    Button,
-    Image,
-    Icon,
-    IconButton,
-    createIcon,
-    IconProps,
-    useColorModeValue,
-    Link,
-  } from '@chakra-ui/react';
-  import * as React from 'react';
+  Box, Button, Container, createIcon, Flex, Heading, Image, Link, Stack, Text
+} from '@chakra-ui/react';
+import * as React from 'react';
 import colours from '../config/colours';
   
   export default function Hero() {
@@ -28,6 +15,7 @@ import colours from '../config/colours';
           direction={{ base: 'column', md: 'row' }}>
           <Stack flex={1}  spacing={{ base: 5, md: 10 }}>
             <Heading
+            as="h1"
               lineHeight={1.1}
               fontWeight={600}
               fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
@@ -111,7 +99,7 @@ import colours from '../config/colours';
               overflow={'hidden'}>
 
               <Image
-                alt={'Hero Image'}
+                alt={'FBR Studios Logo'}
                 fit={'cover'}
                 align={'center'}
                 w={'100%'}

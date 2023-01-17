@@ -1,8 +1,7 @@
-import * as React from "react"
-import { Text, extendTheme, ChakraProvider, Heading, Center, Button, SimpleGrid, Divider, Box, Stack, StackDivider } from "@chakra-ui/react"
-import "@fontsource/overpass"
+import { Box, Card, CardBody, CardHeader, Center, Heading, Stack, StackDivider, Text } from "@chakra-ui/react"
 import "@fontsource/lato"
-import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
+import "@fontsource/overpass"
+import * as React from "react"
 import colours from "../config/colours"
 
 

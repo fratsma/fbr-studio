@@ -1,17 +1,12 @@
-import * as React from "react"
-import { Text, extendTheme, ChakraProvider, Heading, Center, Button, SimpleGrid, Divider, Box, Stack, StackDivider, Wrap, WrapItem, Flex } from "@chakra-ui/react"
-import "@fontsource/overpass"
+import { Center, ChakraProvider, extendTheme, Heading, Text, Wrap, WrapItem } from "@chakra-ui/react"
 import "@fontsource/lato"
-import Header from "../../components/navbar"
-import Pages from "../../components/pages"
-import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
-import MyCard from "../../components/card"
-import PurposeCard from "../../components/purposeCard"
-import BestSellingServices from "../../components/bestSellingServices"
-import Products from "../../components/products"
+import "@fontsource/overpass"
+import * as React from "react"
+import { Helmet, HelmetProvider } from 'react-helmet-async'
 import FAQ from "../../components/accordian"
 import SmallWithSocial from "../../components/footer"
 import { DarkModeSwitch } from "../../components/navbar2"
+import Products from "../../components/products"
 
 
 
@@ -29,12 +24,21 @@ const Services = () => {
   return (
     <ChakraProvider>
 
+      <HelmetProvider>
+        <Helmet>
+          <title>Services: FBR Studios</title>
+          <meta name="description" content="What services does FBR Studios provide to help your small business rank on Google and other search engines" />
+        </Helmet>
+
+      {/* <title>FBR Studios: Services</title>
+      <meta>name="What services does FBR Studios provide to help your small business rank on Google and other search engines'</meta> */}
+
         <DarkModeSwitch/>
 
         {/* <Text align={"center"} fontSize={25} fontWeight={"bold"}> Services  </Text> */}
         <Center>
 
-        <Heading fontSize={'3xl'} textAlign={"center"}>What SEO Services Do We Offer?
+        <Heading fontSize={'3xl'} textAlign={"center"} as="h1">What SEO Services Do We Offer?
         </Heading>
         </Center>
 
@@ -172,7 +176,7 @@ const Services = () => {
 
         <SmallWithSocial/>
 
-
+        </HelmetProvider>
     </ChakraProvider>
 
     

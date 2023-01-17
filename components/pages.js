@@ -1,7 +1,6 @@
-import { Box, extendTheme, Button, ButtonGroup, Center, Heading, ChakraProvider } from '@chakra-ui/react'
-import { Link } from 'gatsby'
-import "@fontsource/overpass"
+import { Box, extendTheme } from '@chakra-ui/react'
 import "@fontsource/lato"
+import "@fontsource/overpass"
 import "@fontsource/questrial"
 import * as React from "react"
 

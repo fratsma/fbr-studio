@@ -1,19 +1,10 @@
-import { useState } from 'react'
+import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
 import {
-  useColorMode,
-  Switch,
-  Flex,
-  Button,
-  IconButton,
-  Link,
-  extendTheme,
-  ChakraProvider,
-  Heading,
-  Center,
-  Text
+  Button, Center, ChakraProvider, extendTheme, Flex, Heading, IconButton,
+  Link, Text, useColorMode
 } from '@chakra-ui/react'
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 import * as React from "react"
+import { useState } from 'react'
 import colours from '../config/colours'
 
 const myTheme = extendTheme({
@@ -83,6 +74,8 @@ export const DarkModeSwitch = () => {
 
           <Link href="/blog" passHref>
           <Button m={5} width={200} bg={colours.lightblue} color={colours.white}>Blog</Button>
+
+
           </Link>
         </Flex>
 

@@ -1,20 +1,7 @@
-import React from 'react';
 import {
-  Box,
-  Heading,
-  Link,
-  Image,
-  Text,
-  Divider,
-  HStack,
-  Tag,
-  Wrap,
-  WrapItem,
-  SpaceProps,
-  useColorModeValue,
-  Container,
-  VStack,
+  Box, Container, Heading, Image, Link, Text, useColorModeValue
 } from '@chakra-ui/react';
+import React from 'react';
 
 import colours from "../config/colours";
 
