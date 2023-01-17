@@ -1,4 +1,4 @@
-import { ChakraProvider, extendTheme } from "@chakra-ui/react"
+import { ChakraProvider } from "@chakra-ui/react"
 import "@fontsource/lato"
 import "@fontsource/overpass"
 import * as React from "react"
@@ -8,17 +8,7 @@ import SmallWithSocial from "../../components/footer"
 import { DarkModeSwitch } from "../../components/navbar2"
 
 
-const myTheme = extendTheme({
-  fonts: {
-    heading: "lato",
-    body: "lato",    
-  },
-
-})
-
-
-
-const IndexPage = () => {
+const PageSpeedBlog = () => {
   return (
     <ChakraProvider>
 
@@ -96,6 +86,6 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default PageSpeedBlog
 
 export const Head = () => <title>Importance of Page Speed</title>

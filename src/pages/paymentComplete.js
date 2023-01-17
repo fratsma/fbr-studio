@@ -1,20 +1,11 @@
 import { CheckIcon } from '@chakra-ui/icons'
-import { Box, Center, ChakraProvider, extendTheme, Heading, Icon, Text } from "@chakra-ui/react"
+import { Box, Center, ChakraProvider, Heading, Icon, Text } from "@chakra-ui/react"
 import "@fontsource/lato"
 import * as React from "react"
 import SmallWithSocial from "../../components/footer"
 import { DarkModeSwitch } from "../../components/navbar2"
 import colours from "../../config/colours"
 
-
-
-const myTheme = extendTheme({
-  fonts: {
-    heading: "lato",
-    body: "lato",    
-  },
-
-})
 
 const PaymentComplete = () => {
     return(
@@ -63,7 +54,7 @@ const PaymentComplete = () => {
             bg={colours.white}  padding={10} borderRadius={10} mt={10} shadow="xl" > 
 
 
-            <iframe src="https://www.cognitoforms.com/f/w7oGKl5blkyNwDqf9gtIig/2" width={"100%"} height="150"></iframe>
+            <iframe title='payment complete' src="https://www.cognitoforms.com/f/w7oGKl5blkyNwDqf9gtIig/2" width={"100%"} height="150"></iframe>
             <script src="https://www.cognitoforms.com/f/iframe.js"></script>
             </Box>
 

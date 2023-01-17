@@ -7,20 +7,6 @@ import * as React from "react"
 import colours from '../config/colours'
 
 
-const myTheme = extendTheme({
-    fonts: {
-      heading: "lato",
-      body: "lato",
-      
-    },
-    styles: {
-        global: {
-          body: {
-            bg: "#f5f5f5",
-          },
-        },
-      },
-  })
 
 export default function BestSellingServices() {
     return(

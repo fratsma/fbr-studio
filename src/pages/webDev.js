@@ -1,5 +1,5 @@
 import { CheckIcon } from '@chakra-ui/icons'
-import { Box, ChakraProvider, Container, extendTheme, Heading, HStack, Icon, SimpleGrid, Stack, Text, VStack } from "@chakra-ui/react"
+import { Box, ChakraProvider, Container, Heading, HStack, Icon, SimpleGrid, Stack, Text, VStack } from "@chakra-ui/react"
 import "@fontsource/lato"
 import "@fontsource/overpass"
 import * as React from "react"
@@ -10,13 +10,7 @@ import Pricing from "../../components/pricing"
 import colours from "../../config/colours"
 
 
-const myTheme = extendTheme({
-  fonts: {
-    heading: "lato",
-    body: "lato",    
-  },
 
-})
 
 
 const WebDev2 = () => {
@@ -134,7 +128,7 @@ const WebDev2 = () => {
 
     <Text align={"center"} fontSize={25} fontWeight={"bold"} mt={10} mb={5}>Got Questions? Ask them here! </Text>
 
-      <iframe src="https://www.cognitoforms.com/f/w7oGKl5blkyNwDqf9gtIig/1" width={"100%"} height="270"></iframe>
+      <iframe title="questions form" src="https://www.cognitoforms.com/f/w7oGKl5blkyNwDqf9gtIig/1" width={"100%"} height="270"></iframe>
       <script src="https://www.cognitoforms.com/f/iframe.js"></script>
 
 

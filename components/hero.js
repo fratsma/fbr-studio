@@ -1,5 +1,5 @@
 import {
-  Box, Button, Container, createIcon, Flex, Heading, Image, Link, Stack, Text
+  Box, Button, Center, Container, createIcon, Flex, Heading, Image, Link, Stack, Text
 } from '@chakra-ui/react';
 import * as React from 'react';
 import colours from '../config/colours';
@@ -18,7 +18,8 @@ import colours from '../config/colours';
             as="h1"
               lineHeight={1.1}
               fontWeight={600}
-              fontSize={{ base: '3xl', sm: '4xl', lg: '6xl' }}>
+              fontSize={{ base: '2xl', sm: '3xl', lg: '5xl' }}>
+                <Center>
               <Text
                 as={'span'}
                 position={'relative'}
@@ -34,17 +35,20 @@ import colours from '../config/colours';
                     bg: colours.lightblue,
                   zIndex: -1,
                 }}>
-                Affordable Web Services,
+                Affordable Web Services
               </Text>
-              <br />
+              </Center>
+
+              <Center>
               <Text as={'span'} color={colours.lightblue}>
                 for your small business
               </Text>
+              </Center>
             </Heading>
-            <Text color={'gray.500'}>
+            <Text textAlign={'center'} color={'gray.500'}>
               FBR Studios provides services that will help your small business optimise it's online presence and help it to grow.
               We understand that search engine optimisation and web development can be confusing and expensive. This is why 
-              we have created a range of simple and affordable services to help create more awareness of your business online.
+              we have created a range of simple and affordable services to increase online awareness of your business.
             </Text>
             <Stack
               spacing={{ base: 4, sm: 6 }}

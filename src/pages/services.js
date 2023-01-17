@@ -1,22 +1,12 @@
-import { Center, ChakraProvider, extendTheme, Heading, Text, Wrap, WrapItem } from "@chakra-ui/react"
+import { Center, ChakraProvider, Heading, Text, Wrap, WrapItem } from "@chakra-ui/react"
 import "@fontsource/lato"
 import "@fontsource/overpass"
 import * as React from "react"
 import { Helmet, HelmetProvider } from 'react-helmet-async'
-import FAQ from "../../components/accordian"
+import FaQ from "../../components/accordian"
 import SmallWithSocial from "../../components/footer"
 import { DarkModeSwitch } from "../../components/navbar2"
 import Products from "../../components/products"
-
-
-
-const myTheme = extendTheme({
-  fonts: {
-    heading: "lato",
-    body: "lato",    
-  },
-
-})
 
 
 
@@ -141,7 +131,7 @@ const Services = () => {
 
         <Center>
 
-        <FAQ
+        <FaQ
         
         item1Title="How will I recieve my audit?"
         item1Content="The audit will be sent in a PDF document via the email that you provide in checkout."
@@ -168,7 +158,7 @@ const Services = () => {
 
         <Text align={"center"} fontSize={25} fontWeight={"bold"} mt={10} mb={5}>Got Questions? Ask them here! </Text>
 
-        <iframe src="https://www.cognitoforms.com/f/w7oGKl5blkyNwDqf9gtIig/1" width={"100%"} height="270"></iframe>
+        <iframe title="contact form" src="https://www.cognitoforms.com/f/w7oGKl5blkyNwDqf9gtIig/1" width={"100%"} height="270"></iframe>
         <script src="https://www.cognitoforms.com/f/iframe.js"></script>
 
 

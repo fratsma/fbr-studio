@@ -11,7 +11,7 @@ import {
     AccordionIcon,
   } from '@chakra-ui/react'
 
-  export default function FAQ(props) {
+  export default function FaQ(props) {
     return(
             
 
