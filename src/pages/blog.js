@@ -44,7 +44,7 @@ const SEO = () => {
         description="In this post, we will discuss the importance of page speed for SEO and how to optimize your 
         website's page speed to improve user experience and increase the chances of ranking higher in search results.
         We will also provide tips and best practices for optimizing images, minifying code, and using a content delivery network (CDN) to improve page speed."
-        imageLink="https://images.unsplash.com/photo-1509099652299-30938b0aeb63?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3BlZWR8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60"
+        imageLink="/long exposure.jpg"
         imageAlt="Page Speed Image"
         ArticleLink="/pageSpeedBlog"
         />

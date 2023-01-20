@@ -15,7 +15,8 @@ import {
     return(
             
 
-            <Accordion allowToggle width={'50%'} mt={10}>
+        <Box width={['90%', '90%', '90%', '50%']}>
+            <Accordion allowToggle  mt={10}>
             <AccordionItem>
                 <h2>
                 <AccordionButton>
@@ -73,6 +74,8 @@ import {
                 </AccordionPanel>
             </AccordionItem>
             </Accordion>
+
+            </Box>
 
 
 

@@ -27,8 +27,10 @@ import colours from '../config/colours';
             <Stack direction={'row'} spacing={6}>
               <Link href={'#'}>Home</Link>
               <Link href={'/services'}>Services</Link>
-              <Link href={'/seo'}>Blog</Link>
-              <Link href={'#'}>Contact</Link>
+              <Link href={'/services'}>Web Dev</Link>
+
+              <Link href={'/blog'}>Blog</Link>
+
             </Stack>
             <Text>Contact us at: info@fbrstudios.com</Text>
             <Text>© 2023 FBR Studios. All rights reserved</Text>

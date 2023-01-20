@@ -65,8 +65,8 @@ const Services = () => {
           <WrapItem>
 
           <Products title="Full SEO Audit with Follow Up"
-          description="We will provide 2 full SEO Audits. The second audit will take place 1-3 months after the first one. 
-          This audit will show the improvements that have been made and spot any new opportunities."
+          description="We will provide 2 full SEO Audits.  
+          The second audit will show the improvements that have been made since the first one and spot any new opportunities."
 
           subTitle="What you get:"
 
@@ -80,7 +80,7 @@ const Services = () => {
           listItem7="Content Comparison"
           listItem9="Up to 5 Pages Analysed"
 
-          secondDescription="You get the freedom to decide the time between the two audits. 
+          secondDescription="You get to choose the time between the audits. 
           We recommend around 2 months, as it takes time for SEO changes to take effect."
 
 
