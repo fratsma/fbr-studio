@@ -1,5 +1,5 @@
 import { CheckIcon } from '@chakra-ui/icons'
-import { Button, ButtonGroup, Card, CardBody, CardFooter, Divider, extendTheme, Heading, List, ListIcon, ListItem, Stack, Text } from '@chakra-ui/react'
+import { Button, ButtonGroup, Card, CardBody, CardFooter, Divider, extendTheme, Heading, List, ListIcon, ListItem, Stack, Text, Center, Box } from '@chakra-ui/react'
 import "@fontsource/lato"
 import "@fontsource/overpass"
 import "@fontsource/questrial"
@@ -13,7 +13,7 @@ export default function Products(props) {
     return(
         <>
             
-            <Card shadow="xl" maxW='sm' bg={colours.white} margin={10} height={810}>
+            <Card shadow="xl" maxW='sm' bg={colours.white} margin={10} height={[870, 750, 750, 750]}>
             <CardBody>
                 <Stack mt='6' spacing='3'>
                 <Heading size='md'>{props.title}</Heading>
@@ -65,29 +65,39 @@ export default function Products(props) {
                     {props.secondDescription}
                 </Text>
    
-                <Text color={colours.lightblue} fontSize='2xl' >
+                <Text color={colours.lightblue} fontSize='5xl' >
                     {props.price}
                 </Text>
-                <Text color={colours.lightblue} fontSize='sm'>
+                <Text color={colours.lightblue} fontSize='sm' >
                     {props.deliveryTime}
                 </Text>
                 </Stack>
             </CardBody>
-            <Divider />
-            <CardFooter>
+            {/* <Divider />
+             */}
+            {/* <CardFooter > */}
+
+             <Box margin={5}>
+
+
+
                 <ButtonGroup spacing='2'>
+
                 <Link href={props.link} >
 
-                <Button variant='solid' bg={colours.lightblue} color={colours.white}    
+                <Button variant='solid' bg={colours.lightblue} color={colours.white}   size='lg' 
                 _hover={{
                 bg: 'green.500',
             }}>
                     Buy now
                 </Button>
                 </Link>
+                
 
                 </ButtonGroup>
-            </CardFooter>
+
+                </Box>
+            {/* </CardFooter> */}
             </Card>
 
             

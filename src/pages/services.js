@@ -28,7 +28,7 @@ const Services = () => {
         {/* <Text align={"center"} fontSize={25} fontWeight={"bold"}> Services  </Text> */}
         <Center>
 
-        <Heading fontSize={'3xl'} textAlign={"center"} as="h1">What SEO Services Do We Offer?
+        <Heading fontSize={[30, 35, 40, 40]} textAlign={"center"} as="h1">What SEO Services Do We Offer?
         </Heading>
         </Center>
 
@@ -150,6 +150,10 @@ const Services = () => {
         Once we have done this, we can start optimising your website. For example, we will 
         slightly alter content on your site to improve keyword optimisation and optimise image's to improve site speed."
 
+
+        item5Title="I am not based in the UK, can I still purchase your services?"
+        item5Content="Yes! We are based in the UK, but we can provide our services to anyone in the world. The payment will automatically convert to your local currency."
+
         />
 
         
@@ -175,4 +179,4 @@ const Services = () => {
 
 export default Services
 
-export const Head = () => <title>Services</title>
+export const Head = () => <title>FBR Studios: Our Services</title>

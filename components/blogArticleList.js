@@ -11,7 +11,7 @@ const ArticleList = (props) => {
 
     <Link  href={props.ArticleLink} textDecoration="none" _hover={{ textDecoration: 'none' }}>
 
-      <Container bg={colours.white} maxW={'7xl'} pt={2} pb={10} borderRadius={10} shadow="xl">
+      <Container bg={colours.white} maxW={'7xl'} pt={2} pb={10} mt={10} mb={10} borderRadius={10} shadow="xl">
 
         <Box
         //   marginTop={{ base: '1', sm: '5' }}
@@ -37,6 +37,7 @@ const ArticleList = (props) => {
                 }
                   alt={props.imageAlt}
                   objectFit="contain"
+                  width={{ base: '100%', sm: '80%' }}
                 />
               </Link>
             </Box>

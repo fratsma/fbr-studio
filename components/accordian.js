@@ -73,7 +73,30 @@ import {
                 {props.item4Content}
                 </AccordionPanel>
             </AccordionItem>
+
+
+
+            <AccordionItem>
+                <h2>
+                <AccordionButton>
+                    <Box as="span" flex='1' textAlign='left' fontWeight={"bold"}>
+                    {props.item5Title}
+                    </Box>
+                    <AccordionIcon />
+                </AccordionButton>
+                </h2>
+                <AccordionPanel pb={4}>
+                {props.item5Content}
+                </AccordionPanel>
+            </AccordionItem>
+            
+
+
+
+
             </Accordion>
+
+            
 
             </Box>
 

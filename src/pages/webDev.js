@@ -26,12 +26,14 @@ const WebDev2 = () => {
 
         <Box p={0}>
       <Stack spacing={4} as={Container} maxW={'5xl'} textAlign={'center'}>
-        <Heading fontSize={'3xl'} as="h1">Affordable Web Development For Small Businesses
+        <Heading fontSize={[30, 35, 40, 40]} as="h1">Affordable Web Development For Small Businesses
         </Heading>
         <Text color={'gray.600'} fontSize={'xl'}>
         We work closely with you to make a website that is perfect for you and your business.
         Websites are a vital way to showcase your business, allowing potential customers to see your products, services and important information.
-        A website built by FBR Studios is guaranteed to leave a positive impression on your customers. 
+        They can often be expensive and time consuming for small businesses, all we need from you is a domain and logo, we'll do the rest!
+        A website built by FBR Studios is guaranteed to leave a positive impression on your customers. Available to everyone across the world, currency conversion will 
+        happen automatically at checkout. 
         </Text>
       </Stack>
 
@@ -143,4 +145,4 @@ const WebDev2 = () => {
 
 export default WebDev2
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Affordable Web Development for Small Businesses: FBR Studios</title>

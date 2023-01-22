@@ -1,4 +1,4 @@
-import { ChakraProvider } from "@chakra-ui/react"
+import { ChakraProvider, Text } from "@chakra-ui/react"
 import "@fontsource/lato"
 import "@fontsource/overpass"
 import * as React from "react"
@@ -6,6 +6,8 @@ import { Helmet, HelmetProvider } from 'react-helmet-async'
 import BlogPost from "../../components/blogPost"
 import SmallWithSocial from "../../components/footer"
 import { DarkModeSwitch } from "../../components/navbar2"
+import SocialProfile from "../../components/social"
+
 
 
 const PageSpeedBlog = () => {
@@ -75,6 +77,11 @@ const PageSpeedBlog = () => {
             seventhParagraph="In conclusion, page speed is a crucial aspect of SEO, and website owners should pay attention to it. It is important to optimize page speed to improve user experience, reduce bounce rates, and increase the chances of ranking higher in search results. By implementing the best practices, you can optimize your website’s page speed and improve your website's SEO."
             />
 
+          <Text align={"center"} fontSize={25} fontWeight={"bold"} mt={10}> The Author  </Text>
+
+
+          <SocialProfile/>
+
 
         <SmallWithSocial/>
 
@@ -88,4 +95,4 @@ const PageSpeedBlog = () => {
 
 export default PageSpeedBlog
 
-export const Head = () => <title>Importance of Page Speed</title>
+export const Head = () => <title>FBR Studios: The Importance of Page Speed for SEO</title>

@@ -1,7 +1,7 @@
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
 import {
   Button, Center, ChakraProvider, extendTheme, Flex, Heading, IconButton,
-  Link, Text, useColorMode
+  Link, Text, useColorMode, Box
 } from '@chakra-ui/react'
 import * as React from "react"
 import { useState } from 'react'
@@ -30,22 +30,32 @@ export const DarkModeSwitch = () => {
   return (
 
     <>
-                <Center>
+                <Center  bg={colours.white}>
+
+                  
+                
                 <ChakraProvider theme={myTheme}>
+                <Link href="/" style={{textDecoration: 'none'}}>
                 <Heading textAlign={"center"} fontSize={45}
                 mt={25}>FBR Studios</Heading>
 
+                </Link>
 
-
-
+                
 
                 </ChakraProvider>
             </Center>
 
-            <Center>
+            <Center bg={colours.white}>
+            <Link style={{textDecoration: 'none'}} href="/">
+
             <Text  textAlign={"center"} fontSize={20}>The Search Engine Specialist</Text>
+
+            </Link>
+            
+
             </Center>
-<Center>
+<Center bg={colours.white} boxShadow={'md'} >
 
     <Flex>
       <Flex
@@ -84,10 +94,10 @@ export const DarkModeSwitch = () => {
           aria-label="Open Menu"
           bg={colours.lightblue}
           color={colours.white}
-          size="lg"
+          size="md"
           mr={2}
           mt={5}
-          mb={10}
+          mb={5}
           icon={
             <HamburgerIcon />
           }
@@ -149,6 +159,9 @@ export const DarkModeSwitch = () => {
       </Flex>
     </Flex>
     </Center>
+
+    <br></br>
+    <br></br>
 
     </>
   )

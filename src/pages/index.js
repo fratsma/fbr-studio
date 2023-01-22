@@ -9,6 +9,7 @@ import SmallWithSocial from "../../components/footer"
 import Hero from "../../components/hero"
 import { DarkModeSwitch } from "../../components/navbar2"
 import PurposeCard from "../../components/purposeCard"
+import SocialProfile from "../../components/social"
 
 
 const myTheme = extendTheme({
@@ -51,14 +52,19 @@ const IndexPage = () => {
 
         {/* <Divider  borderWidth={1}/> */}
 
-        <Text align={"center"} fontSize={25} fontWeight={"bold"}> What is the purpose of FBR Studios?  </Text>
+        <Text align={"center"} fontSize={[30, 35, 40, 40]} fontWeight={"bold"}> What is the purpose of FBR Studios?  </Text>
         
         <PurposeCard/>
 
 
-        <Text align={"center"} fontSize={25} fontWeight={"bold"} pt={35}> Featured Products </Text>
+        <Text align={"center"} fontSize={[30, 35, 40, 40]} fontWeight={"bold"} pt={35}> Featured Products </Text>
 
         <BestSellingServices/>
+
+        <Text align={"center"} fontSize={[30, 35, 40, 40]} fontWeight={"bold"}> Who is Behind FBR Studios </Text>
+
+
+        <SocialProfile/>
 
         <SmallWithSocial/>
 
@@ -71,4 +77,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>FBR Studios: The SEO Specialist</title>

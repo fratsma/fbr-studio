@@ -7,37 +7,28 @@ module.exports = {
      image: 'public/icon.png'
   },
   plugins: [
-    'gatsby-plugin-sitemap',
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-adsense`,
       options: {
-        // The property ID; the tracking code won't be generated without it
-        trackingId: "G-B5DNCBX8BT",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
-        // Delays sending pageview hits on route update (in milliseconds)
-        pageTransitionDelay: 0,
-        // Enables Google Optimize using your container Id
-        optimizeId: "G-B5DNCBX8BT",
-        // Enables Google Optimize Experiment ID
-        experimentId: "G-B5DNCBX8BT",
-        // Set Variation ID. 0 for original 1,2,3....
-        variationId: "G-B5DNCBX8BT",
-        // Defers execution of google analytics script after page load
-        defer: false,
-        // Any additional optional fields
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-        cookieDomain: "https://www.fbrstudios.com",
-        // defaults to false
-        enableWebVitalsTracking: true,
-      }},
+        publisherId: `ca-pub-2875047620727571`
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        // You can add multiple tracking ids and a pageview event will be fired for all of them.
+        trackingIds: [
+          "G-B5DNCBX8BT", // Google Analytics / GA
+        ],
+        // This object is used for configuration specific to this plugin
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: true,
+          // Setting this parameter is also optional
+          respectDNT: true,
+          // Avoids sending pageview hits from custom paths
+          exclude: ["/preview/**", "/do-not-track/me/too/"],
+        },},},
     {
       resolve: '@chakra-ui/gatsby-plugin',
       options: {

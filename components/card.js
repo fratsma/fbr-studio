@@ -14,16 +14,18 @@ export default function MyCard() {
 
 
             {/* <SimpleGrid  pt={10} spacing={4} columns={3} > */}
-            <Wrap spacing="30px" justify="center" padding={10}>
+            <Wrap spacing="30px" justify="center" padding={10} mt={-20}>
             <WrapItem>
 
             
-            <Card bg={colours.white} maxWidth={450} height={250} shadow="xl">
+            <Card bg={colours.white} maxWidth={450} height={[350, 270, 270, 270]} shadow="xl">
                 <CardHeader >
                 <Heading size='md'>Search Engine Optimisation</Heading>
                 </CardHeader>
                 <CardBody>
-                <Text>See how your business' website can improve their SEO and learn how to boost your ranking.</Text>
+                <Text>See what products we offer to help optimise your website. Perfect for businesses that have already got a website and just need a bit of help to
+                get it ranking on Google.
+                </Text>
                 </CardBody>
                 <CardFooter>
                 <Link href="/services" passHref>
@@ -33,12 +35,14 @@ export default function MyCard() {
             </Card>
             </WrapItem>
             <WrapItem >
-            <Card bg={colours.white} maxWidth={450} height={250} shadow="xl">
+            <Card bg={colours.white} maxWidth={450} height={[350, 270, 270, 270]} shadow="xl">
                 <CardHeader>
                 <Heading size='md'>Website Development</Heading>
                 </CardHeader>
                 <CardBody>
-                <Text>Find out what services we provide to help you improve your SEO.</Text>
+                <Text>Affordable web development aimed at helping small businesses reach customers online. 
+                We'll get your business online with a website that is easy to use and looks great.
+                </Text>
                 </CardBody>
                 <CardFooter>
                 <Link href="/webDev" passHref>
@@ -49,7 +53,7 @@ export default function MyCard() {
             </Card>
             </WrapItem>
             <WrapItem>
-            <Card bg={colours.white} maxWidth={450} height={250} shadow="xl">
+            <Card bg={colours.white} maxWidth={450} height={[350, 270, 270, 270]} shadow="xl">
                 <CardHeader>
                 <Heading size='md'>SEO Blog</Heading>
                 </CardHeader>

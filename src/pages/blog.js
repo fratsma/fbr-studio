@@ -5,6 +5,7 @@ import * as React from "react"
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 import ArticleList from "../../components/blogArticleList"
 import { DarkModeSwitch } from "../../components/navbar2"
+import SmallWithSocial from "../../components/footer"
 
 
 
@@ -36,8 +37,22 @@ const SEO = () => {
 
         <DarkModeSwitch/>
 
-        <Heading fontSize={'3xl'} textAlign={"center"} mb={10}>Posts to Help Your Business Improve It's SEO 
+        <Heading fontSize={[30, 35, 40, 40]} textAlign={"center"} mb={10}>Posts to Help Your Business Improve It's SEO 
         </Heading>
+
+
+        <ArticleList 
+        title="5 Simple Ways Small Businesses Can Improve Their Local SEO"
+        description="This blog post aims to provide small businesses with effective strategies for improving their local SEO. 
+        From optimising their website to getting listed in online directories and encouraging customers to leave reviews. 
+        The post also highlights the importance of using relevant keywords and optimizing for local search. 
+        Overall, the goal of the post is to help small businesses improve their online presence and drive more traffic to their website."
+        imageLink="/localSEO.png"
+        imageAlt="Local SEO Image"
+        ArticleLink="/localSEO"
+        />
+
+
 
         <ArticleList 
         title="Why Page Speed is Important for SEO"
@@ -48,6 +63,7 @@ const SEO = () => {
         imageAlt="Page Speed Image"
         ArticleLink="/pageSpeedBlog"
         />
+        <SmallWithSocial/>
 
 
         </HelmetProvider>
@@ -58,4 +74,4 @@ const SEO = () => {
 
 export default SEO
 
-export const Head = () => <title>Blog</title>
+export const Head = () => <title>FBR Studios: Blog</title>

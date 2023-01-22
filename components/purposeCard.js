@@ -10,9 +10,10 @@ export default function PurposeCard() {
     return(
         <>
         <Center>
-        <Card maxW={{ base: '90%'}} mt={10} bg={colours.white}>
+        <Card width={['90%', '90%', '90%', '50%']}             boxShadow={'xl'}
+             mt={10} bg={colours.white}>
         <CardHeader>
-        <Heading size='md'>Helping small businesses reach their online audience</Heading>
+        <Heading size='md'>Helping small businesses reach their online audience through SEO</Heading>
         </CardHeader>
 
         <CardBody>
@@ -22,7 +23,7 @@ export default function PurposeCard() {
                 Making it easy
             </Heading>
             <Text pt='2' fontSize='sm'>
-                It's difficult to optimise your online presence. We make it easy.
+                It's difficult for small businesses to optimise their online presence. We make it easy.
             </Text>
             </Box>
             <Box>

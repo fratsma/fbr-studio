@@ -22,7 +22,7 @@ export default function BlogPost(props) {
 
             <Center>
 
-            <Heading as="h1" fontSize={'3xl'} textAlign={"center"}>{props.title}
+            <Heading as="h1" fontSize={[30, 35, 40, 40]} textAlign={"center"}>{props.title}
         </Heading>
             </Center>
 

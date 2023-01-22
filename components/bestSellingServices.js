@@ -18,8 +18,9 @@ export default function BestSellingServices() {
             overflow='hidden'
             variant='outline'
             bg={colours.white}
-            // width={"50%"}
-            maxW={{ base: '90%'}}
+            width={['90%', '90%', '90%', '50%']}
+            boxShadow={'xl'}
+
             >
             <Image
                 objectFit='cover'

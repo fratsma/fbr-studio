@@ -13,7 +13,7 @@ import colours from '../config/colours';
         <Box
           bg={colours.lightblue}
           mt={10}
-          color={useColorModeValue('gray.700', 'gray.200')}>
+          color={colours.lightgrey}>
 
           <Container
             as={Stack}
@@ -27,7 +27,7 @@ import colours from '../config/colours';
             <Stack direction={'row'} spacing={6}>
               <Link href={'#'}>Home</Link>
               <Link href={'/services'}>Services</Link>
-              <Link href={'/services'}>Web Dev</Link>
+              <Link href={'/webDev'}>Web Dev</Link>
 
               <Link href={'/blog'}>Blog</Link>
 
