@@ -6,6 +6,10 @@ import {
 import * as React from "react"
 import { useState } from 'react'
 import colours from '../config/colours'
+import "@fontsource/lato"
+import "@fontsource/chakra-petch"
+import "@fontsource/overpass"
+
 
 const myTheme = extendTheme({
     fonts: {
@@ -36,8 +40,8 @@ export const DarkModeSwitch = () => {
                 
                 <ChakraProvider theme={myTheme}>
                 <Link href="/" style={{textDecoration: 'none'}}>
-                <Heading textAlign={"center"} fontSize={45}
-                mt={25}>FBR Studios</Heading>
+                <Heading fontFamily={"Chakra Petch"} textAlign={"center"} fontSize={[50, 70]}  
+                mt={15}>FBR Studios</Heading>
 
                 </Link>
 
@@ -49,7 +53,7 @@ export const DarkModeSwitch = () => {
             <Center bg={colours.white}>
             <Link style={{textDecoration: 'none'}} href="/">
 
-            <Text  textAlign={"center"} fontSize={20}>The Search Engine Specialist</Text>
+            <Text  textAlign={"center"} mt={-2} fontFamily={"Chakra Petch"} fontSize={[18, 25]}>The Search Engine Specialist</Text>
 
             </Link>
             

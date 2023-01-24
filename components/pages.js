@@ -2,6 +2,8 @@ import { Box, extendTheme } from '@chakra-ui/react'
 import "@fontsource/lato"
 import "@fontsource/overpass"
 import "@fontsource/questrial"
+import "@fontsource/chakra-petch"
+
 import * as React from "react"
 
 const myTheme = extendTheme({

@@ -8,6 +8,7 @@ import SmallWithSocial from "../../components/footer"
 import { DarkModeSwitch } from "../../components/navbar2"
 import Pricing from "../../components/pricing"
 import colours from "../../config/colours"
+import WhyFBRWeb from '../../components/whyFBR web dev'
 
 
 
@@ -127,6 +128,8 @@ const WebDev2 = () => {
     </Box>
 
     <Pricing/>
+
+    <WhyFBRWeb/>
 
     <Text align={"center"} fontSize={25} fontWeight={"bold"} mt={10} mb={5}>Got Questions? Ask them here! </Text>
 

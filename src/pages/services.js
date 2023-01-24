@@ -7,6 +7,7 @@ import FaQ from "../../components/accordian"
 import SmallWithSocial from "../../components/footer"
 import { DarkModeSwitch } from "../../components/navbar2"
 import Products from "../../components/products"
+import WhyFBR from "../../components/whyFBR"
 
 
 
@@ -126,6 +127,10 @@ const Services = () => {
         {/* </Center> */}
 
         </Wrap>
+
+        <WhyFBR/>
+
+        <br></br>
 
         <Text align={"center"} fontSize={25} fontWeight={"bold"}> Frequently Asked Questions  </Text>
 

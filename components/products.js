@@ -13,7 +13,7 @@ export default function Products(props) {
     return(
         <>
             
-            <Card shadow="xl" maxW='sm' bg={colours.white} margin={10} height={[870, 750, 750, 750]}>
+            <Card shadow="xl" maxW='sm' bg={colours.white} margin={10} height={[840, 750, 750, 750]}>
             <CardBody>
                 <Stack mt='6' spacing='3'>
                 <Heading size='md'>{props.title}</Heading>

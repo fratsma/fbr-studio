@@ -10,6 +10,7 @@ import Hero from "../../components/hero"
 import { DarkModeSwitch } from "../../components/navbar2"
 import PurposeCard from "../../components/purposeCard"
 import SocialProfile from "../../components/social"
+import "@fontsource/chakra-petch"
 
 
 const myTheme = extendTheme({
@@ -52,7 +53,7 @@ const IndexPage = () => {
 
         {/* <Divider  borderWidth={1}/> */}
 
-        <Text align={"center"} fontSize={[30, 35, 40, 40]} fontWeight={"bold"}> What is the purpose of FBR Studios?  </Text>
+        <Text align={"center"} fontSize={[30, 35, 40, 40]} fontWeight={"bold"}> Our Mission  </Text>
         
         <PurposeCard/>
 
